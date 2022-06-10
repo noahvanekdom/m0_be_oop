@@ -40,6 +40,7 @@ Vampire1.drink
 p Vampire1
 
 
+
 #  Write a Dragon class
 #  it should have a dynamic name attribute (string)
 #  it should have a dynamic rider attribute (string)
@@ -60,6 +61,7 @@ class Dragon
       @hunger = 0
     else
       @hunger = @hunger + 1
+      @is_hungry = true
     end
   end
 end
@@ -73,6 +75,10 @@ Dragon1.eat
 p Dragon1
 
 Dragon1.eat
+Dragon1.eat
+
+p Dragon1
+
 Dragon1.eat
 
 p Dragon1
